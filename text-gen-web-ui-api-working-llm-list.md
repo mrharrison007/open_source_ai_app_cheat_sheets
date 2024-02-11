@@ -1,14 +1,17 @@
 # Text Gen Web UI LLMs for API
 
-LLMs I found that work with the Text Generation Web UI out of the box with no other tweaking.
+LLMs I found that work with the Text Generation Web UI "API" out of the box with no other tweaking.
 LLMs that span one GPU, the API works, LLMs that span two GPUS, API does not work.
 
 System:
-
 Proxmox 8 Host
 Ubuntu 22.04 Server VM Guest
 	64GB RAM
 	2 x 3090s 24Gb VRAM each (48 Total)
+
+CUDA/Nvidia:
+Cuda compilation tools, release 12.3, V12.3.107
+Nvidia Driver Version: 545.23.08    CUDA Version: 12.3
 
 
 
@@ -20,6 +23,10 @@ Ubuntu 22.04 Server VM Guest
 4. TheBloke_Wizard-Vicuna-7B-Uncensored-GPTQ
 5. TheBloke_Wizard-Vicuna-30B-Uncensored-GPTQ
 6. TheBloke_vicuna-7B-v1.3-GPTQ
+7. TheBloke_Nous-Hermes-2-SOLAR-10.7B-GPTQ
+8. TheBloke_SOLAR-10.7B-Instruct-v1.0-GPTQ
+9. TheBloke_Llama-2-13B-chat-GPTQ
+10. TheBloke_vicuna-33B-GPTQ
 
 
 
