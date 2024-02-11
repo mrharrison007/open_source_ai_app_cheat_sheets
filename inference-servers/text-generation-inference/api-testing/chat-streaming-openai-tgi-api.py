@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import openai
+from openai import OpenAI
 import os
 import json
 
@@ -12,7 +12,7 @@ port = os.getenv('INFERENCE1_SERVER_PORT', default_port)
 url = f"http://{hostname}:{port}/v1"
 
 # init the client but point it to TGI
-client = openai(
+client = OpenAI(
     base_url=url,
     api_key="-"
 )
